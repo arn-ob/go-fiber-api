@@ -1,5 +1,5 @@
 # Start from golang:1.12-alpine base image
-FROM golang:1.18-alpine
+FROM golang:1.17-alpine
 
 # The latest alpine images don't have some tools like (`git` and `bash`).
 # Adding git, bash and openssh to the image
@@ -24,8 +24,8 @@ COPY . .
 # Build the Go app
 RUN go build -o main .
 
-# Expose port 8080 to the outside world
-EXPOSE 8080
+# Expose port 3000 to the outside world
+EXPOSE 3000
 
 # Run the executable
 CMD ["./main"]
