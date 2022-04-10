@@ -1,4 +1,3 @@
-
 @url = http://localhost:3080
 
 GET {{url}} HTTP/1.1

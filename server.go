@@ -11,5 +11,13 @@ func main() {
 		return c.SendString("Hello, World!")
 	})
 
+	app.Get("/param", func(c *fiber.Ctx) error {
+		return c.SendString("param: ")
+	})
+
+	app.Get("/id/:id", func(c *fiber.Ctx) error {
+		return c.SendString("param: " + c.Params("id"))
+	})
+
 	app.Listen(":3080")
 }

@@ -1,0 +1,7 @@
+@url = http://localhost:3080
+
+GET {{url}}/param HTTP/1.1
+
+###
+
+GET {{url}}/id/123 HTTP/1.1

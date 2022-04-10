@@ -7,3 +7,7 @@
 ## fresh Package
 
 fresh tools run as like as pm2 
+
+## Docker Compose Rebuild run
+
+docker-compose up --build --force-recreate
