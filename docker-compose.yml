@@ -15,6 +15,20 @@ services:
     networks: # Networks to join (Services on the same network can communicate with each other using their name)
       - backend
 
+  db:
+    image: mysql:8.0.27
+    container_name: gormDB
+    restart: unless-stopped
+    environment:
+      MYSQL_USER: admin
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: gorm
+    ports:
+    - "3377:3306"
+    networks:
+      - backend
   
 networks:
   backend:    
+    driver: bridge

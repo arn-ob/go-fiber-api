@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"github.com/gofiber/fiber/v2"
-	"github.com/arn-ob/go-fiber-api/config"
-    "github.com/arn-ob/go-fiber-api/handlers"
+	"fiber-api/config"
+    "fiber-api/handlers"
 )
 
 func main() {
@@ -23,5 +23,5 @@ func main() {
     app.Put("/dogs/:id", handlers.UpdateDog)
     app.Delete("/dogs/:id", handlers.RemoveDog)
 
-	app.Listen(":3080")
+	log.Fatal(app.Listen(":3080"))
 }

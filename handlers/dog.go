@@ -1,8 +1,8 @@
 package handlers
 
 import (
-    "github.com/arn-ob/go-fiber-api/config"
-    "github.com/arn-ob/go-fiber-api/entities"
+    "fiber-api/config"
+    "fiber-api/entities"
     "github.com/gofiber/fiber/v2"
 )
 
