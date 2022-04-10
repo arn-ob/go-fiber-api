@@ -10,7 +10,7 @@ services:
       context: . # Use an image built from the specified dockerfile in the current directory.
       dockerfile: Dockerfile
     ports:
-      - "3080:3000" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+      - "3080:3080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
     restart: unless-stopped    
     networks: # Networks to join (Services on the same network can communicate with each other using their name)
       - backend

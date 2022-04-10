@@ -25,7 +25,7 @@ COPY . .
 RUN go build -o main .
 
 # Expose port 3000 to the outside world
-EXPOSE 3000
+EXPOSE 3080
 
 # Run the executable
 CMD ["./main"]
