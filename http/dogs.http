@@ -5,9 +5,10 @@ GET {{url}}/dogs HTTP/1.1
 ###
 
 POST {{url}}/dogs HTTP/1.1
+content-type: application/json
 
 {
-    "name": "te",
-    "breed": "ads",
+    "name": "test",
+    "breed": "test 2",
     "age": 22
 }
