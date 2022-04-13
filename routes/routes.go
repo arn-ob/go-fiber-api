@@ -9,10 +9,9 @@ import (
 func Routes (app *fiber.App) {
 	
 	// Testing Routing
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Testing Done")
-	})
+	app.Get("/", handlers.Ok)
 
+	// crud 
 	app.Get("/dogs", handlers.GetDogs)
     app.Get("/dogs/:id", handlers.GetDog)
     app.Post("/dogs", handlers.AddDog)

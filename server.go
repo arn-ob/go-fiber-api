@@ -16,5 +16,6 @@ func main() {
 	// config routes
 	routes.Routes(app)
 
+	// port 3080
 	log.Fatal(app.Listen(":3080"))
 }
