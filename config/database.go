@@ -18,7 +18,7 @@ func Connect() error {
         panic(err)
     }
 
-    Database.AutoMigrate(&entities.Dog{})
+    Database.AutoMigrate(&entities.Dog{}, &entities.Login{})
 
     return nil
 }

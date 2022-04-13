@@ -1,0 +1,21 @@
+
+@url = http://localhost:3080
+
+GET {{url}}/login HTTP/1.1
+
+###
+
+POST {{url}}/registration HTTP/1.1
+content-type: application/json
+
+{
+    "username": "arnob",
+    "password": "fuk",
+    "name": "arn",
+    "address": "hello"
+}
+
+### 
+
+GET {{url}}/in/arnob/fuk HTTP/1.1
+content-type: application/json
